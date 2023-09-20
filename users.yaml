@@ -1,0 +1,15 @@
+USERS: 
+  - access_key: c33864f1e4331340105ec831f206db71
+    white_uid: 0
+    banned_uid: 0
+  - access_key: cf0a4c51d8d18a0d7ea9fef5d2b55571
+    white_uid: 0
+    banned_uid: 0
+LIKE_CD: 2
+SHARE_CD: 5
+DANMAKU_CD: 6
+WATCHINGLIVE: 65
+SIGNINGROUP: 2
+ASYNC: 1
+WEARMEDAL: 0
+SENDKEY: SCT103989TttSREbXnxe9GP1VA5JDp6AK9
