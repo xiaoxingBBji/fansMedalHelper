@@ -1,0 +1,31 @@
+name: Fans Run
+on:
+  push:
+    branches:
+      - dev
+  workflow_dispatch:
+  schedule:
+    - cron: '30 17,9 * * *'
+    
+    
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        ref: master
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.10"
+        cache: 'pip'
+        cache-dependency-path: '**/requirements.txt'
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+    - name: Build and publish
+      env:
+        USERS: ${{ secrets.USERS }}
+      run: |
+        python index.py
