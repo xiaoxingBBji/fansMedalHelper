@@ -4,6 +4,9 @@ USERS:
     banned_uid: 0
   - access_key: cf0a4c51d8d18a0d7ea9fef5d2b55571
     white_uid: 0
+    banned_uid: 0  
+  - access_key: ae5f4dc5e70acf3a78053eeebffc33a2
+    white_uid: 0
     banned_uid: 0
 LIKE_CD: 2
 SHARE_CD: 5
